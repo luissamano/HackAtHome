@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="@string/ApplicationName"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:navigationIcon="@drawable/icon"
+        android:pointerIcon="grab" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewName"
+        android:gravity="right"
+        android:textSize="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/primary_material_dark" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewTitle"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:paddingBottom="10dp"
+        android:textColor="#ffe18926" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewStatus"
+        android:paddingTop="5dp"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        android:textSize="15dp"
+        android:textColor="#ff000000" />
+    <TextView
+        android:text="@string/descr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1"
+        android:paddingLeft="10dp"
+        android:textColor="#ff000000" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1">
+        <android.webkit.WebView
+            android:layout_width="400dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/webViewDescription"
+            android:paddingRight="10dp"
+            android:paddingLeft="15dp"
+            android:backgroundTint="#00ffffff"
+            android:foregroundTint="#00000000"
+            android:foreground="@android:color/holo_blue_bright"
+            android:background="@android:color/transparent" />
+        <ImageView
+            android:src="@android:drawable/ic_menu_gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageViewEvidence"
+            android:layout_gravity="center" />
+    </LinearLayout>
+</LinearLayout>
